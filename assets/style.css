@@ -52,10 +52,31 @@ a {
     padding-left: 10rem;
     padding-right:10rem;
     padding-top: 20px;
+    padding-bottom: 50px;
   
   }
+
+.aboutimg {
+    width: 300px;
+}
+
+.contenthead, ul {
+    font-size: 170%;
+    color:black;
+    text-align: center;
+    padding-top: 60px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.content-header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
   .container{
     display: flex;
+    flex: wrap;
     flex-direction: row;
     justify-content: center;
     color:whitesmoke;
@@ -65,9 +86,6 @@ a {
   }
 
 .box1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     outline: 5px solid var(--dark);
     height: 200px;
     width: 25%;
@@ -75,9 +93,6 @@ a {
     background-size: cover;
 }
 .box2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     outline: 5px solid var(--dark);
     height: 200px;
     width: 25%;
@@ -86,9 +101,6 @@ a {
 }
 
 .box3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     outline: 5px solid var(--dark);
     height: 200px;
     width: 25%;
@@ -96,9 +108,6 @@ a {
     background-size: cover;
 }
 .box4 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     outline: 5px solid var(--dark);
     height: 200px;
     width: 25%;
@@ -118,4 +127,12 @@ a {
     object-fit: fill;
 }
 
-@media screen and (max-width:)
+@media screen and (max-width: 773px) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+     
+    }
+  }

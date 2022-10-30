@@ -41,3 +41,12 @@ header .name-head{
 a {
     text-decoration: none;
 }
+
+.about-me {
+    text-align: center;
+    min-height: 100%;
+    padding-left: 10rem;
+    padding-right:10rem;
+    padding-top: 20px;
+  
+  }

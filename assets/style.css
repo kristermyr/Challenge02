@@ -1,3 +1,7 @@
+:root {
+    --dark: rgb(0, 38, 87); 
+}  
+
 header{
 
     
@@ -64,24 +68,48 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    outline: 5px solid brown;
+    outline: 5px solid var(--dark);
     height: 200px;
-    width: 300px;
+    width: 25%;
     background-image: url(./images/14955672218_7b2aef314d_k.jpg);
+    background-size: cover;
 }
 .box2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    outline: 5px solid brown;
+    outline: 5px solid var(--dark);
     height: 200px;
-    width: 300px;
+    width: 25%;
+    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
+    background-size: cover;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    outline: 5px solid var(--dark);
+    height: 200px;
+    width: 25%;
+    background-image: url(./images/14955672218_7b2aef314d_k.jpg);
+    background-size: cover;
+}
+.box4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    outline: 5px solid var(--dark);
+    height: 200px;
+    width: 25%;
+    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
+    background-size: cover;
 }
 
 .text-in-image {
     display: flex;
     align-items: center;
-    background-color: brown;
+    background-color: var(--dark);
     height:50px;
     padding: 10px;
 }   
@@ -89,3 +117,5 @@ a {
 .box1, .box2 img {
     object-fit: fill;
 }
+
+@media screen and (max-width:)

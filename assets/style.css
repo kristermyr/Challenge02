@@ -47,17 +47,17 @@ a {
 }
 
 .about-me {
-    text-align: center;
-    min-height: 100%;
-    padding-left: 10rem;
-    padding-right:10rem;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    
   
   }
 
 .aboutimg {
     width: 300px;
+    border-radius: 50px;
 }
 
 .contenthead, ul {
@@ -76,41 +76,52 @@ a {
 }
   .container{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     color:whitesmoke;
-
-    
     
   }
 
-.box1 {
+.topbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 1000px;
     outline: 5px solid var(--dark);
-    height: 200px;
-    width: 25%;
+    background-image: url(./images/14955672218_7b2aef314d_k.jpg);
+    background-size: cover;
+}
+
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 600px;
+    outline: 5px solid var(--dark);
     background-image: url(./images/14955672218_7b2aef314d_k.jpg);
     background-size: cover;
 }
 .box2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 600px;
     outline: 5px solid var(--dark);
-    height: 200px;
-    width: 25%;
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
     background-size: cover;
 }
 
 .box3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 600px;
     outline: 5px solid var(--dark);
-    height: 200px;
-    width: 25%;
     background-image: url(./images/14955672218_7b2aef314d_k.jpg);
     background-size: cover;
 }
 .box4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 600px;
     outline: 5px solid var(--dark);
-    height: 200px;
-    width: 25%;
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
     background-size: cover;
 }
@@ -127,12 +138,11 @@ a {
     object-fit: fill;
 }
 
-@media screen and (max-width: 773px) {
+@media screen and (max-width:800px) {
     .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-      
-     
+        flex-direction: column;     
     }
-  }
+    .box1 .box2 .box3 .box4 {
+     height: 50px;
+    } 
+}

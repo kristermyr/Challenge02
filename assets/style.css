@@ -125,6 +125,14 @@ a {
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
     background-size: cover;
 }
+.box5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 600px;
+    outline: 5px solid var(--dark);
+    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
+    background-size: cover;
+}
 
 .text-in-image {
     display: flex;
@@ -138,11 +146,30 @@ a {
     object-fit: fill;
 }
 
+#contactme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 50px ;
+    color:black;
+
+
+}
 @media screen and (max-width:800px) {
     .container {
-        flex-direction: column;     
+        flex-direction: column;
+
+    
     }
-    .box1 .box2 .box3 .box4 {
-     height: 50px;
-    } 
+
 }

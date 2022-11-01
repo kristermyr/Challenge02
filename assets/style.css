@@ -81,10 +81,14 @@ a {
     
 }
 
-#box1 {
+.project{                                                   
+    height: 400px;
+}
+
+#box1 {                                     /* Running into sizing issue of flexboxes in Mobile mode*/
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 600px;
+    flex: 1 0 400px;
     outline: 5px solid var(--dark);
     background-image: url(./images/14955672218_7b2aef314d_k.jpg);
     background-size: cover;
@@ -92,7 +96,7 @@ a {
 #box2 {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 600px;
+    flex: 1 0 400px;
     outline: 5px solid var(--dark);
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
     background-size: cover;
@@ -101,7 +105,7 @@ a {
 #box3 {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 600px;
+    flex: 1 0 400px;
     outline: 5px solid var(--dark);
     background-image: url(./images/14955672218_7b2aef314d_k.jpg);
     background-size: cover;
@@ -109,7 +113,7 @@ a {
 #box4 {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 600px;
+    flex: 1 0 400px;
     outline: 5px solid var(--dark);
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
     background-size: cover;
@@ -117,7 +121,7 @@ a {
 #box5 {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 600px;
+    flex: 1 0 400px;
     outline: 5px solid var(--dark);
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
     background-size: cover;
@@ -125,7 +129,7 @@ a {
 #box6 {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 600px;
+    flex: 1 0 400px;
     outline: 5px solid var(--dark);
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
     background-size: cover;
@@ -164,7 +168,6 @@ footer a {
     } 
     .topbox, .box1, .box2, .box3, .box4, .box5, .box6  {
        
-        flex: 1 0 300px;
+        flex: 1 0 200px;
     }
-
 }

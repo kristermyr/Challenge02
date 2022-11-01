@@ -2,15 +2,9 @@
     --dark: rgb(0, 38, 87); 
 }  
 
-header{
-
-    
-}
-
 body {
     margin:0px;
     font-family:Arial, Helvetica, sans-serif;
-
 }
 
 nav ul{
@@ -37,7 +31,7 @@ nav a {
     display:block;  
 }
 
-header .name-head{
+.name-head{
     margin: 0;
     padding-top: 20px;
 }
@@ -46,21 +40,19 @@ a {
     text-decoration: none;
 }
 
-.about-me {
+.about-me {                  /* Bio needs to be written in at later date*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 50px;
-    
-  
-  }
+}
 
-.aboutimg {
+.aboutimg {                /* Profile picture image*/
     width: 300px;
     border-radius: 50px;
 }
 
-.contenthead, ul {
+.contenthead {          /* Class for content topics */
     font-size: 170%;
     color:black;
     text-align: center;
@@ -69,12 +61,7 @@ a {
     list-style-type: none;
 }
 
-.content-header {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-  .container{
+  .container{            /*main flexbox container*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -83,16 +70,18 @@ a {
     
   }
 
-.topbox {
+.topbox {                   /*top flexbox, larger than the others, background image linked in CSS needs
+                             to be changed to HTML and fitted at later date and then compress the CSS */
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 1000px;
     outline: 5px solid var(--dark);
     background-image: url(./images/14955672218_7b2aef314d_k.jpg);
     background-size: cover;
+    
 }
 
-.box1 {
+#box1 {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 600px;
@@ -100,7 +89,7 @@ a {
     background-image: url(./images/14955672218_7b2aef314d_k.jpg);
     background-size: cover;
 }
-.box2 {
+#box2 {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 600px;
@@ -109,7 +98,7 @@ a {
     background-size: cover;
 }
 
-.box3 {
+#box3 {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 600px;
@@ -117,7 +106,7 @@ a {
     background-image: url(./images/14955672218_7b2aef314d_k.jpg);
     background-size: cover;
 }
-.box4 {
+#box4 {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 600px;
@@ -125,7 +114,15 @@ a {
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
     background-size: cover;
 }
-.box5 {
+#box5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 600px;
+    outline: 5px solid var(--dark);
+    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
+    background-size: cover;
+}
+#box6 {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 600px;
@@ -134,17 +131,13 @@ a {
     background-size: cover;
 }
 
-.text-in-image {
+.text-in-image {          /* Header text for the box categories*/
     display: flex;
     align-items: center;
     background-color: var(--dark);
     height:50px;
     padding: 10px;
 }   
-
-.box1, .box2 img {
-    object-fit: fill;
-}
 
 #contactme {
     display: flex;
@@ -168,8 +161,10 @@ footer a {
 @media screen and (max-width:800px) {
     .container {
         flex-direction: column;
-
-    
+    } 
+    .topbox, .box1, .box2, .box3, .box4, .box5, .box6  {
+       
+        flex: 1 0 300px;
     }
 
 }

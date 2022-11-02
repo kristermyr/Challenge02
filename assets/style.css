@@ -81,58 +81,44 @@ a {
     
 }
 
-.project{                                                   
+.project {                                                   
     height: 400px;
 }
 
-#box1 {                                     /* Running into sizing issue of flexboxes in Mobile mode*/
+.media-size {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 400px;
     outline: 5px solid var(--dark);
-    background-image: url(./images/14955672218_7b2aef314d_k.jpg);
-    background-size: cover;
-}
-#box2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 400px;
-    outline: 5px solid var(--dark);
-    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
     background-size: cover;
 }
 
-#box3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 400px;
-    outline: 5px solid var(--dark);
+
+#box1 {                                     
     background-image: url(./images/14955672218_7b2aef314d_k.jpg);
-    background-size: cover;
+   
+}
+#box2 {
+    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
+   
+}
+
+#box3 {
+    background-image: url(./images/14955672218_7b2aef314d_k.jpg);
+    
 }
 #box4 {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 400px;
-    outline: 5px solid var(--dark);
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
-    background-size: cover;
+   
 }
 #box5 {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 400px;
-    outline: 5px solid var(--dark);
+   
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
-    background-size: cover;
+   
 }
 #box6 {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 400px;
-    outline: 5px solid var(--dark);
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
-    background-size: cover;
+    
 }
 
 .text-in-image {          /* Header text for the box categories*/
@@ -162,12 +148,15 @@ footer a {
 
 
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:800px) {                       /*Media screen changing the sizes of content in under 800px*/
     .container {
         flex-direction: column;
     } 
-    .topbox, .box1, .box2, .box3, .box4, .box5, .box6  {
+    .topbox   {
        
-        flex: 1 0 200px;
+        flex: 1 0 150px;   
+    }
+    .media-size {
+        flex: 1 0 50px;
     }
 }

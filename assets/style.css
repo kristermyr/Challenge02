@@ -38,7 +38,9 @@ nav a {
 
 a {
     text-decoration: none;
+    color: white;
 }
+
 
 .about-me {                  /* Bio needs to be written in at later date*/
     display: flex;
@@ -83,12 +85,14 @@ a {
 
 .project {                                                   
     height: 400px;
+    width: 1000px;
 }
 
 .media-size {
     display: flex;
     flex-wrap: wrap;
     flex: 1 0 400px;
+    width: 400px;
     outline: 5px solid var(--dark);
     background-size: cover;
 }
@@ -100,7 +104,6 @@ a {
 }
 #box2 {
     background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
-   
 }
 
 #box3 {
@@ -108,17 +111,15 @@ a {
     
 }
 #box4 {
-    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
-   
+    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);  
 }
+
 #box5 {
-   
-    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
-   
+    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);  
 }
+
 #box6 {
-    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);
-    
+    background-image: url(./images/Screenshot\ 2022-10-27\ 135847.png);  
 }
 
 .text-in-image {          /* Header text for the box categories*/
@@ -128,6 +129,8 @@ a {
     height:50px;
     padding: 10px;
 }   
+
+
 
 #contactme {
     display: flex;
@@ -149,14 +152,28 @@ footer a {
 
 }
 @media screen and (max-width:800px) {                       /*Media screen changing the sizes of content in under 800px*/
-    .container {
+    .container .project {
         flex-direction: column;
+        
     } 
     .topbox   {
        
-        flex: 1 0 150px;   
+        flex: 1 0 150px;
+        width: 300px;
+        height: 200px;   
+        
     }
     .media-size {
-        flex: 1 0 50px;
+        width:300px;
+        padding-left: ;
+
+    }
+    nav ul{
+       
+        padding-right: 30px;      
+    }
+    .name-head{
+    padding-top: 10px;
+    padding-left: 40px;
     }
 }

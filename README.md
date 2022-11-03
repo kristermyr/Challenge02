@@ -29,7 +29,7 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
-![The Portfolio webpage includes a navigation bar, a header image, and boxes with text and images showcasing the applications.](./assets/images/kristermyr.github.io_Challenge02_%20(1).png
+![The Portfolio webpage includes a navigation bar, a header image, and boxes with text and images showcasing the applications.](./assets/images/kristermyr.github.io_Challenge02_%20(1).png)
 ## Credits
 
 Completed in colaboration with:

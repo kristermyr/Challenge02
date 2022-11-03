@@ -49,6 +49,7 @@ a {
     padding: 50px;
 }
 
+
 .aboutimg {                /* Profile picture image*/
     width: 300px;
     border-radius: 50px;
@@ -151,7 +152,7 @@ footer a {
 
 
 }
-@media screen and (max-width:800px) {                       /*Media screen changing the sizes of content in under 800px*/
+@media screen and (max-width:844px) {                       /*Media screen changing the sizes of content in under 800px*/
     .container .project {
         flex-direction: column;
         
@@ -165,7 +166,7 @@ footer a {
     }
     .media-size {
         width:300px;
-        padding-left: ;
+       
 
     }
     nav ul{
